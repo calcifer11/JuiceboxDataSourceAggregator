@@ -24,7 +24,8 @@ import {DeployMyDelegateData} from "./structs/DeployMyDelegateData.sol";
     interface IAllowlistDataSource {
     function isAllowed(address _address) external view returns (bool);}
     
-contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPayDelegate3_1_1, IJBRedemptionDelegate3_1_1 {
+    contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPayDelegate3_1_1, IJBRedemptionDelegate3_1_1 
+    {
     error INVALID_PAYMENT_EVENT(address caller, uint256 projectId, uint256 value);
     error INVALID_REDEMPTION_EVENT(address caller, uint256 projectId, uint256 value);
     error PAYER_NOT_ON_ALLOWLIST(address payer);
@@ -34,10 +35,8 @@ contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPay
 
     /// @notice The directory of terminals and controllers for projects.
     IJBDirectory public directory;
-
-
-    /// @notice Addresses allowed to make payments to the treasury.
-    mapping(address => bool) public paymentFromAddressIsAllowed;
+    
+    address[] public dataSources;
 
     /// @notice This function gets called when the project receives a payment.
     /// @dev Part of IJBFundingCycleDataSource.
@@ -110,6 +109,7 @@ contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPay
     /// @param _projectId The ID of the project this contract's functionality applies to.
     /// @param _directory The directory of terminals and controllers for projects.
     /// @param _deployMyDelegateData Data necessary to deploy the delegate.
+
     function initialize(uint256 _projectId, IJBDirectory _directory, DeployMyDelegateData memory _deployMyDelegateData)
         external
     {
@@ -121,18 +121,15 @@ contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPay
         directory = _directory;
 
         // Store the allow list.
-        uint256 _numberOfAllowedAddresses = _deployMyDelegateData.allowList.length;
-        for (uint256 _i; _i < _numberOfAllowedAddresses;) {
-            paymentFromAddressIsAllowed[_deployMyDelegateData.allowList[_i]] = true;
-            unchecked {
-                ++_i;
-            }
+        uint256 _numberOfDataSources = _deployMyDelegateData.dataSources.length;
+        for (uint256 _i = 0; _i < _numberOfDataSources; _i++) {
+            dataSources.push(_deployMyDelegateData.dataSources[_i]);
         }
     }
 
+
     /// @notice Received hook from the payment terminal after a payment.
     /// @dev Reverts if the calling contract is not one of the project's terminals.
-    /// @dev This example implementation reverts if the payer isn't on the allow list.
     /// @param _data Standard Juicebox project payment data. See https://docs.juicebox.money/dev/api/data-structures/jbdidpaydata/.
     function didPay(JBDidPayData3_1_1 calldata _data) external payable virtual override {
         // Make sure the caller is a terminal of the project, and that the call is being made on behalf of an interaction with the correct project.
@@ -140,9 +137,6 @@ contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPay
             msg.value != 0 || !directory.isTerminalOf(projectId, IJBPaymentTerminal(msg.sender))
                 || _data.projectId != projectId
         ) revert INVALID_PAYMENT_EVENT(msg.sender, _data.projectId, msg.value);
-
-        // Make sure the address is on the allow list.
-        if (!paymentFromAddressIsAllowed[_data.payer]) revert PAYER_NOT_ON_ALLOWLIST(_data.payer);
     }
 
     /// @notice Received hook from the payment terminal after a redemption.
@@ -156,27 +150,3 @@ contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource3_1_1, IJBPay
         ) revert INVALID_REDEMPTION_EVENT(msg.sender, _data.projectId, msg.value);
     }
 }
-
-
-
-function payParams(JBPayParamsData calldata _data)
-        external
-        view
-        virtual
-        override
-        returns (uint256 weight, string memory memo, JBPayDelegateAllocation3_1_1[] memory delegateAllocations)
-    {
-        bool isAllowed = false;
-
-        for (uint i = 0; i < dataSources.length; i++) {
-            IAllowlistDataSource dataSource = IAllowlistDataSource(dataSources[i]);
-            if (dataSource.isAllowed(_data.payer)) {
-                isAllowed = true;
-                break;
-            }
-        }
-
-        if (!isAllowed) revert NOT_ALLOWED();
-
-        return (_data.weight, _data.memo, IJBPayDelegate3_1_1(address(0)));
-    }

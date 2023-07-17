@@ -2,7 +2,7 @@
 pragma solidity ^0.8.17;
 
 import "forge-std/Test.sol";
-import {MyDelegate} from "../src/MyDelegate.sol";
+import {AllowlistDataSourceAggregator} from "../src/AllowlistDataSourceAggregator.sol";
 
 contract MyDelegateTest_Unit is Test {
     function setUp() public {}

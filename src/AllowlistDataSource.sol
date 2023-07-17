@@ -1,6 +1,6 @@
 pragma solidity ^0.8.19;
 
-contract allowDataContract{
+contract AllowlistDataSource{
   error NOT_ALLOWED();
 
  

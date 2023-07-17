@@ -1,0 +1,412 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NOT_ALLOWED",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "allowed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "isAllowed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060f88061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063babcc539146037578063d63a8e11146074575b600080fd5b606060423660046094565b6001600160a01b031660009081526020819052604090205460ff1690565b604051901515815260200160405180910390f35b6060607f3660046094565b60006020819052908152604090205460ff1681565b60006020828403121560a557600080fd5b81356001600160a01b038116811460bb57600080fd5b939250505056fea26469706673582212204d5126b6944e4507f6b2e0b769eb20d82ed0725c20272c35e21b61e7f6c76b5164736f6c63430008140033",
+    "sourceMap": "28:214:60:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063babcc539146037578063d63a8e11146074575b600080fd5b606060423660046094565b6001600160a01b031660009081526020819052604090205460ff1690565b604051901515815260200160405180910390f35b6060607f3660046094565b60006020819052908152604090205460ff1681565b60006020828403121560a557600080fd5b81356001600160a01b038116811460bb57600080fd5b939250505056fea26469706673582212204d5126b6944e4507f6b2e0b769eb20d82ed0725c20272c35e21b61e7f6c76b5164736f6c63430008140033",
+    "sourceMap": "28:214:60:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;136:101;;;;;;:::i;:::-;-1:-1:-1;;;;;214:17:60;194:4;214:17;;;;;;;;;;;;;;136:101;;;;470:14:69;;463:22;445:41;;433:2;418:18;136:101:60;;;;;;;90:39;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;14:286:69;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:69;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:69:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "allowed(address)": "d63a8e11",
+    "isAllowed(address)": "babcc539"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NOT_ALLOWED\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"allowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"isAllowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/AllowlistDataSource.sol\":\"AllowlistDataSource\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"src/AllowlistDataSource.sol\":{\"keccak256\":\"0x1317826e51d87776b1453e90003bdd612415f475a8fe4f49c7d06354c78d27fe\",\"urls\":[\"bzz-raw://521f2c9eb54c5a32cf9ba945a7530fffa67bc73d253c37a9c1bbf0a743dd97fe\",\"dweb:/ipfs/QmWvDqdLfiziVb9Uq5QhfG3qAJH9DCnZFvrwhWRMx7BpUx\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NOT_ALLOWED"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "allowed",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_address",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isAllowed",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=node_modules/@chainlink/",
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@jbx-protocol/=node_modules/@jbx-protocol/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@paulrberg/=node_modules/@paulrberg/",
+        ":@prb/=node_modules/@prb/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":prb-math/=node_modules/prb-math/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/AllowlistDataSource.sol": "AllowlistDataSource"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/AllowlistDataSource.sol": {
+        "keccak256": "0x1317826e51d87776b1453e90003bdd612415f475a8fe4f49c7d06354c78d27fe",
+        "urls": [
+          "bzz-raw://521f2c9eb54c5a32cf9ba945a7530fffa67bc73d253c37a9c1bbf0a743dd97fe",
+          "dweb:/ipfs/QmWvDqdLfiziVb9Uq5QhfG3qAJH9DCnZFvrwhWRMx7BpUx"
+        ],
+        "license": null
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/AllowlistDataSource.sol",
+    "id": 28840,
+    "exportedSymbols": {
+      "AllowlistDataSource": [
+        28839
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "0:242:60",
+    "nodes": [
+      {
+        "id": 28820,
+        "nodeType": "PragmaDirective",
+        "src": "0:24:60",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 28839,
+        "nodeType": "ContractDefinition",
+        "src": "28:214:60",
+        "nodes": [
+          {
+            "id": 28822,
+            "nodeType": "ErrorDefinition",
+            "src": "61:20:60",
+            "nodes": [],
+            "errorSelector": "95c31a56",
+            "name": "NOT_ALLOWED",
+            "nameLocation": "67:11:60",
+            "parameters": {
+              "id": 28821,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:60"
+            }
+          },
+          {
+            "id": 28826,
+            "nodeType": "VariableDeclaration",
+            "src": "90:39:60",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "d63a8e11",
+            "mutability": "mutable",
+            "name": "allowed",
+            "nameLocation": "122:7:60",
+            "scope": 28839,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 28825,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 28823,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "98:7:60",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "90:24:60",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 28824,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "109:4:60",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 28838,
+            "nodeType": "FunctionDefinition",
+            "src": "136:101:60",
+            "nodes": [],
+            "body": {
+              "id": 28837,
+              "nodeType": "Block",
+              "src": "200:37:60",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "baseExpression": {
+                      "id": 28833,
+                      "name": "allowed",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28826,
+                      "src": "214:7:60",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                        "typeString": "mapping(address => bool)"
+                      }
+                    },
+                    "id": 28835,
+                    "indexExpression": {
+                      "id": 28834,
+                      "name": "_address",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28828,
+                      "src": "222:8:60",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "214:17:60",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 28832,
+                  "id": 28836,
+                  "nodeType": "Return",
+                  "src": "207:24:60"
+                }
+              ]
+            },
+            "functionSelector": "babcc539",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAllowed",
+            "nameLocation": "145:9:60",
+            "parameters": {
+              "id": 28829,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 28828,
+                  "mutability": "mutable",
+                  "name": "_address",
+                  "nameLocation": "163:8:60",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28838,
+                  "src": "155:16:60",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 28827,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:7:60",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:18:60"
+            },
+            "returnParameters": {
+              "id": 28832,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 28831,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28838,
+                  "src": "194:4:60",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 28830,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "194:4:60",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:6:60"
+            },
+            "scope": 28839,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "AllowlistDataSource",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          28839
+        ],
+        "name": "AllowlistDataSource",
+        "nameLocation": "37:19:60",
+        "scope": 28840,
+        "usedErrors": [
+          28822
+        ],
+        "usedEvents": []
+      }
+    ]
+  },
+  "id": 60
+}

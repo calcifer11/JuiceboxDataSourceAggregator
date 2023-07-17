@@ -4,16 +4,16 @@ pragma solidity ^0.8.17;
 import "forge-std/Script.sol";
 import {IJBDelegatesRegistry} from "@jbx-protocol/juice-delegates-registry/src/interfaces/IJBDelegatesRegistry.sol";
 import {IJBOperatorStore} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBOperatorStore.sol";
-import {MyDelegate} from "./../src/MyDelegate.sol";
-import {MyDelegateDeployer} from "./../src/MyDelegateDeployer.sol";
-import {MyDelegateProjectDeployer} from "./../src/MyDelegateProjectDeployer.sol";
+import {AllowlistDataSourceAggregator} from "./../src/AllowlistDataSourceAggregator.sol";
+import {AllowlistDataSourceAggregatorDeployer} from "./../src/AllowlistDataSourceAggregatorDeployer.sol";
+import {AllowlistDataSourceAggregatorProjectDeployer} from "./../src/AllowlistDataSourceAggregatorProjectDeployer.sol";
 
 abstract contract Deploy is Script {
     function _run(IJBOperatorStore _operatorStore, IJBDelegatesRegistry _registry) internal {
         vm.broadcast();
-        MyDelegate _delegateImplementation = new MyDelegate();
-        MyDelegateDeployer _delegateDeployer = new MyDelegateDeployer(_delegateImplementation, _registry);
-        new MyDelegateProjectDeployer(
+        AllowlistDataSourceAggregator _delegateImplementation = new AllowlistDataSourceAggregator();
+        AllowlistDataSourceAggregatorDeployer _delegateDeployer = new AllowlistDataSourceAggregatorDeployer(_delegateImplementation, _registry);
+        new AllowlistDataSourceAggregatorProjectDeployer(
               _delegateDeployer,
               _operatorStore
             );

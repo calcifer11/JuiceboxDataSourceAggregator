@@ -9,7 +9,9 @@ import {AllowlistDataSourceAggregator} from "./AllowlistDataSourceAggregator.sol
 
 /// @notice A contract that deploys a delegate contract.
 contract AllowlistDataSourceAggregatorDeployer {
-    event DelegateDeployed(uint256 projectId, AllowlistDataSourceAggregator delegate, IJBDirectory directory, address caller);
+    event DelegateDeployed(
+        uint256 projectId, AllowlistDataSourceAggregator delegate, IJBDirectory directory, address caller
+    );
 
     /// @notice This contract's current nonce, used for the Juicebox delegates registry.
     uint256 internal _nonce;

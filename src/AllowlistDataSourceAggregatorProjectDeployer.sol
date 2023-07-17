@@ -20,7 +20,9 @@ contract AllowlistDataSourceAggregatorProjectDeployer is JBOperatable {
     AllowlistDataSourceAggregatorDeployer public immutable delegateDeployer;
 
     /// @param _delegateDeployer The delegate deployer.
-    constructor(AllowlistDataSourceAggregatorDeployer _delegateDeployer, IJBOperatorStore _operatorStore) JBOperatable(_operatorStore) {
+    constructor(AllowlistDataSourceAggregatorDeployer _delegateDeployer, IJBOperatorStore _operatorStore)
+        JBOperatable(_operatorStore)
+    {
         delegateDeployer = _delegateDeployer;
     }
 

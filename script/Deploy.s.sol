@@ -12,7 +12,8 @@ abstract contract Deploy is Script {
     function _run(IJBOperatorStore _operatorStore, IJBDelegatesRegistry _registry) internal {
         vm.broadcast();
         AllowlistDataSourceAggregator _delegateImplementation = new AllowlistDataSourceAggregator();
-        AllowlistDataSourceAggregatorDeployer _delegateDeployer = new AllowlistDataSourceAggregatorDeployer(_delegateImplementation, _registry);
+        AllowlistDataSourceAggregatorDeployer _delegateDeployer =
+            new AllowlistDataSourceAggregatorDeployer(_delegateImplementation, _registry);
         new AllowlistDataSourceAggregatorProjectDeployer(
               _delegateDeployer,
               _operatorStore

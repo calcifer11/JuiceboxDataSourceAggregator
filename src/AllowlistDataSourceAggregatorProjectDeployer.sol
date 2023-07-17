@@ -11,16 +11,16 @@ import {DeployMyDelegateData} from "./structs/DeployMyDelegateData.sol";
 import {LaunchProjectData} from "./structs/LaunchProjectData.sol";
 import {LaunchFundingCyclesData} from "./structs/LaunchFundingCyclesData.sol";
 import {ReconfigureFundingCyclesData} from "./structs/ReconfigureFundingCyclesData.sol";
-import {MyDelegate} from "./MyDelegate.sol";
-import {MyDelegateDeployer} from "./MyDelegateDeployer.sol";
+import {AllowlistDataSourceAggregator} from "./AllowlistDataSourceAggregator.sol";
+import {AllowlistDataSourceAggregatorDeployer} from "./AllowlistDataSourceAggregatorDeployer.sol";
 
 /// @notice Deploys a project, or reconfigure an existing project's funding cycles, with a newly deployed Delegate attached.
-contract MyDelegateProjectDeployer is JBOperatable {
+contract AllowlistDataSourceAggregatorProjectDeployer is JBOperatable {
     /// @notice The contract responsible for deploying the delegate.
-    MyDelegateDeployer public immutable delegateDeployer;
+    AllowlistDataSourceAggregatorDeployer public immutable delegateDeployer;
 
     /// @param _delegateDeployer The delegate deployer.
-    constructor(MyDelegateDeployer _delegateDeployer, IJBOperatorStore _operatorStore) JBOperatable(_operatorStore) {
+    constructor(AllowlistDataSourceAggregatorDeployer _delegateDeployer, IJBOperatorStore _operatorStore) JBOperatable(_operatorStore) {
         delegateDeployer = _delegateDeployer;
     }
 
@@ -40,7 +40,7 @@ contract MyDelegateProjectDeployer is JBOperatable {
         projectId = _controller.projects().count() + 1;
 
         // Deploy the delegate contract.
-        MyDelegate _delegate =
+        AllowlistDataSourceAggregator _delegate =
             delegateDeployer.deployDelegateFor(projectId, _deployMyDelegateData, _controller.directory());
 
         // Launch the project.
@@ -65,7 +65,7 @@ contract MyDelegateProjectDeployer is JBOperatable {
         returns (uint256 configuration)
     {
         // Deploy the delegate contract.
-        MyDelegate _delegate =
+        AllowlistDataSourceAggregator _delegate =
             delegateDeployer.deployDelegateFor(_projectId, _deployMyDelegateData, _controller.directory());
 
         // Launch the funding cycles.
@@ -90,7 +90,7 @@ contract MyDelegateProjectDeployer is JBOperatable {
         returns (uint256 configuration)
     {
         // Deploy the delegate contract.
-        MyDelegate _delegate =
+        AllowlistDataSourceAggregator _delegate =
             delegateDeployer.deployDelegateFor(_projectId, _deployMyDelegateData, _controller.directory());
 
         // Reconfigure the funding cycles.

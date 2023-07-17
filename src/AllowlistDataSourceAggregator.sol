@@ -12,8 +12,12 @@ interface IAllowlistDataSource {
 contract AllowlistDataSourceAggregator is IJBFundingCycleDataSource, Initializable {
     error NOT_ALLOWED();
     error DATA_SOURCE_NOT_SET();
-
+    
+    /// @notice The AllowList data source contracts this contract's functionality applies to.
     address[] public dataSources;
+    
+    /// @notice The Juicebox project ID this contract's functionality applies to.
+    uint256 public projectId;
 
     function initialize(address[] memory _dataSources) public initializer {
         require(_dataSources.length > 0, "Data sources should not be empty");

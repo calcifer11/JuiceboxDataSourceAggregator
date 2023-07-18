@@ -1,0 +1,284 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NOT_ALLOWED",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "getWeightModifier",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50607880601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063f6326e5314602d575b600080fd5b60005460405190815260200160405180910390f3fea264697066735822122093a9d2d83ad30985841d20874fa653773280973f60191cbe574a7b48c2445ba064736f6c63430008140033",
+    "sourceMap": "58:182:142:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063f6326e5314602d575b600080fd5b60005460405190815260200160405180910390f3fea264697066735822122093a9d2d83ad30985841d20874fa653773280973f60191cbe574a7b48c2445ba064736f6c63430008140033",
+    "sourceMap": "58:182:142:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;142:96;194:4;217:14;142:96;;160:25:152;;;148:2;133:18;142:96:142;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getWeightModifier()": "f6326e53"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NOT_ALLOWED\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"getWeightModifier\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/DataWeightAggregator/DataWeightSource.sol\":\"DataWeightSource\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"src/DataWeightAggregator/DataWeightSource.sol\":{\"keccak256\":\"0x5ca0c23729cb0a90c0767db0713cf4a36f4a5a00ccfeb0eb8677b0f0537d902b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d9871caf007f39e042883a1e7511bded2de341151322bdd78fc82bfc788e23a3\",\"dweb:/ipfs/QmS2u4Bpxq5bA7Rt7HejTKXN4UgXkHXwRTHWnqGr1A5Lkv\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NOT_ALLOWED"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getWeightModifier",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=node_modules/@chainlink/",
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@jbx-protocol/=node_modules/@jbx-protocol/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@paulrberg/=node_modules/@paulrberg/",
+        ":@prb/=node_modules/@prb/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":prb-math/=node_modules/prb-math/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/DataWeightAggregator/DataWeightSource.sol": "DataWeightSource"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/DataWeightAggregator/DataWeightSource.sol": {
+        "keccak256": "0x5ca0c23729cb0a90c0767db0713cf4a36f4a5a00ccfeb0eb8677b0f0537d902b",
+        "urls": [
+          "bzz-raw://d9871caf007f39e042883a1e7511bded2de341151322bdd78fc82bfc788e23a3",
+          "dweb:/ipfs/QmS2u4Bpxq5bA7Rt7HejTKXN4UgXkHXwRTHWnqGr1A5Lkv"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/DataWeightAggregator/DataWeightSource.sol",
+    "id": 55103,
+    "exportedSymbols": {
+      "DataWeightSource": [
+        55102
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:209:142",
+    "nodes": [
+      {
+        "id": 55089,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:142",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 55102,
+        "nodeType": "ContractDefinition",
+        "src": "58:182:142",
+        "nodes": [
+          {
+            "id": 55091,
+            "nodeType": "ErrorDefinition",
+            "src": "90:20:142",
+            "nodes": [],
+            "errorSelector": "95c31a56",
+            "name": "NOT_ALLOWED",
+            "nameLocation": "96:11:142",
+            "parameters": {
+              "id": 55090,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "107:2:142"
+            }
+          },
+          {
+            "id": 55093,
+            "nodeType": "VariableDeclaration",
+            "src": "116:19:142",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "weightModifier",
+            "nameLocation": "121:14:142",
+            "scope": 55102,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 55092,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "116:4:142",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 55101,
+            "nodeType": "FunctionDefinition",
+            "src": "142:96:142",
+            "nodes": [],
+            "body": {
+              "id": 55100,
+              "nodeType": "Block",
+              "src": "200:38:142",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 55098,
+                    "name": "weightModifier",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 55093,
+                    "src": "217:14:142",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 55097,
+                  "id": 55099,
+                  "nodeType": "Return",
+                  "src": "210:21:142"
+                }
+              ]
+            },
+            "functionSelector": "f6326e53",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWeightModifier",
+            "nameLocation": "151:17:142",
+            "parameters": {
+              "id": 55094,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "168:2:142"
+            },
+            "returnParameters": {
+              "id": 55097,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55096,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55101,
+                  "src": "194:4:142",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55095,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "194:4:142",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:6:142"
+            },
+            "scope": 55102,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DataWeightSource",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          55102
+        ],
+        "name": "DataWeightSource",
+        "nameLocation": "67:16:142",
+        "scope": 55103,
+        "usedErrors": [
+          55091
+        ],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 142
+}

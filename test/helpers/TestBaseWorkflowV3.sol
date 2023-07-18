@@ -76,7 +76,7 @@ contract TestBaseWorkflowV3 is Test {
     // Deploys and initializes contracts for testing.
     function setUp() public virtual {
         // Labels
-        vm.label(_multisig, "projectOwner");
+        //vm.label(_multisig, "projectOwner");
         vm.label(_beneficiary, "beneficiary");
 
         // JBOperatorStore

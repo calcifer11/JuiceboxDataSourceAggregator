@@ -44,11 +44,11 @@ contract AllowlistDataSourceAggregator is
 
     DeployMyDelegateData private delegate;
 
-    address[] public dataSources;
+    address[] private dataSources;
 
     constructor() {
-        dataSources.push(address(0x123)); // Hardcoded datasource address 1
-        dataSources.push(address(0x456)); // Hardcoded datasource address 2
+        dataSources.push(address(123)); // Hardcoded datasource address 1
+        dataSources.push(address(456)); // Hardcoded datasource address 2
     }
 
     /// @notice This function gets called when the project receives a payment.
@@ -146,6 +146,11 @@ contract AllowlistDataSourceAggregator is
     // Get length of dataSources for tests
     function getDataSourcesLength() public view returns (uint256) {
         return dataSources.length;
+    }
+
+    // Ge dataSources for tests
+    function getDataSources() public view returns (address[] memory _dataSources) {
+        return dataSources;
     }
 
     /// @notice Received hook from the payment terminal after a payment.

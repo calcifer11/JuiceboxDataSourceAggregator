@@ -139,22 +139,17 @@ contract MyDelegateTest_Integration_Unit is TestBaseWorkflowV3 {
 
         JBGroupedSplits[] memory _groupedSplits = new JBGroupedSplits[](1); // Default empty
 
-        // Our delegate has an allowlist functionality, create a mock list of one address for testing.
-        address[] memory aList = new address[](1);
-        aList[0] = address(123);
-
         // Our delegate has an datasources functionality, create a mock list of two addresses for testing.
-        address[] memory allowedAddresses = new address[](1);
+        address[] memory allowedAddresses = new address[](2);
         allowedAddresses[0] = address(123);
+        allowedAddresses[1] = address(456);
         DummyDataSource ds1 = new DummyDataSource(allowedAddresses);
         DummyDataSource ds2 = new DummyDataSource(allowedAddresses);
         dataSources.push(address(ds1));
         dataSources.push(address(ds2));
 
-
         // The imported struct used by our delegate
         delegateData = DeployMyDelegateData({
-            allowList: aList,
             dataSources: dataSources
         });
 
@@ -269,7 +264,11 @@ contract MyDelegateTest_Integration_Unit is TestBaseWorkflowV3 {
         assertTrue(delegateData.dataSources.length == _delegateImpl.getDataSourcesLength(), "Initialisation failed");
     }
 
-    function test_payParams() public {
+    function test_payParams() public { 
+        address[] memory _dataSources = _delegateImpl.getDataSources();
+        for (uint256 i = 0; i < _dataSources.length; i++) {
+        emit log_named_address("ds", _dataSources[i]);
+        }
       (uint256 _weight, , ) = _delegateImpl.payParams(_payParamsData);
       emit log_named_uint("weight", _weight);
     }

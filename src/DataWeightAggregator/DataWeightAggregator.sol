@@ -18,7 +18,8 @@ import {JBPayDelegateAllocation3_1_1} from
     "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation3_1_1.sol";
 import {JBRedemptionDelegateAllocation3_1_1} from
     "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation3_1_1.sol";
-import {DeployMyDelegateData} from "./structs/DeployMyDelegateData.sol";
+import {DeployMyDelegateData} from "../structs/DeployMyDelegateData.sol";
+import {DataWeightSource} from "./DataweightSource.sol";
 
 /// @notice A contract that is a Data Source, a Pay Delegate, and a Redemption Delegate.
 
@@ -27,7 +28,7 @@ interface IAllowlistDataSource {
     function isAllowed(address _address) external view returns (bool);
 }
 
-contract AllowlistDataSourceAggregator is
+contract DataWeightAggregator is
     IJBFundingCycleDataSource3_1_1,
     IJBPayDelegate3_1_1,
     IJBRedemptionDelegate3_1_1
@@ -44,11 +45,12 @@ contract AllowlistDataSourceAggregator is
 
     DeployMyDelegateData private delegate;
 
-    address[] public dataSources;
+    DataWeightSource[] public dataWeightSources;
+    uint finalWeight;
 
     constructor() {
-        dataSources.push(address(0x123)); // Hardcoded datasource address 1
-        dataSources.push(address(0x456)); // Hardcoded datasource address 2
+        dataWeightSources.push(address(0x123)); // Hardcoded datasource address 1
+        dataWeightSources.push(address(0x456)); // Hardcoded datasource address 2
     }
 
     /// @notice This function gets called when the project receives a payment.
@@ -65,19 +67,11 @@ contract AllowlistDataSourceAggregator is
         override
         returns (uint256 weight, string memory memo, JBPayDelegateAllocation3_1_1[] memory delegateAllocations)
     {
-        bool isAllowed = false;
-
-        for (uint256 i = 0; i < dataSources.length; i++) {
-            IAllowlistDataSource dataSource = IAllowlistDataSource(dataSources[i]);
-            if (dataSource.isAllowed(_data.payer)) {
-                isAllowed = true;
-                break;
-            }
+        for (uint256 i = 0; i < dataWeightSources.length; i++) {
+            finalWeight = finalWeight + dataWeightSources.payParams(_data).weight;
         }
 
-        if (!isAllowed) revert PAYER_NOT_ON_ALLOWLIST(_data.payer);
-        // Forward the default weight received from the protocol.
-        weight = _data.weight;
+        weight = finalWeight / dataWeightSources.length;
         // Forward the default memo received from the payer.
         memo = _data.memo;
         // Add `this` contract as a Pay Delegate so that it receives a `didPay` call. Don't send any funds to the delegate (keep all funds in the treasury).
@@ -135,17 +129,11 @@ contract AllowlistDataSourceAggregator is
         // Store the basics.
         projectId = _projectId;
         directory = _directory;
-
-        // Store the allow list.
-        uint256 _numberOfDataSources = _deployMyDelegateData.dataSources.length;
-        for (uint256 _i = 0; _i < _numberOfDataSources; _i++) {
-            dataSources.push(_deployMyDelegateData.dataSources[_i]);
-        }
     }
 
     // Get length of dataSources for tests
-    function getDataSourcesLength() public view returns (uint256) {
-        return dataSources.length;
+    function getDataWeightSourcesLength() public view returns (uint256) {
+        return dataWeightSources.length;
     }
 
     /// @notice Received hook from the payment terminal after a payment.

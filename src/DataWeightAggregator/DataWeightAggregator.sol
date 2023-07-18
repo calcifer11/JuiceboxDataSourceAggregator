@@ -19,13 +19,13 @@ import {JBPayDelegateAllocation3_1_1} from
 import {JBRedemptionDelegateAllocation3_1_1} from
     "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation3_1_1.sol";
 import {DeployMyDelegateData} from "../structs/DeployMyDelegateData.sol";
-import {DataWeightSource} from "./DataweightSource.sol";
+import {DataWeightSource} from "./DataWeightSource.sol";
 
 /// @notice A contract that is a Data Source, a Pay Delegate, and a Redemption Delegate.
 
 //Interface to interact with contracts providing lists of allowed payers using isAllowed.
-interface IAllowlistDataSource {
-    function isAllowed(address _address) external view returns (bool);
+interface IDataWeightSource {
+    function getWeightModifier() external view returns (uint);
 }
 
 contract DataWeightAggregator is
@@ -45,8 +45,8 @@ contract DataWeightAggregator is
 
     DeployMyDelegateData private delegate;
 
-    DataWeightSource[] public dataWeightSources;
-    uint finalWeight;
+    address[] public dataWeightSources;
+    //Assuming int percentile weight modifiers (1-100)
 
     constructor() {
         dataWeightSources.push(address(0x123)); // Hardcoded datasource address 1
@@ -67,11 +67,13 @@ contract DataWeightAggregator is
         override
         returns (uint256 weight, string memory memo, JBPayDelegateAllocation3_1_1[] memory delegateAllocations)
     {
+        uint weightMod;
         for (uint256 i = 0; i < dataWeightSources.length; i++) {
-            finalWeight = finalWeight + dataWeightSources.payParams(_data).weight;
+            IDataWeightSource weightSource = IDataWeightSource(dataWeightSources[i]);
+            weightMod = weightMod + weightSource.getWeightModifier();
         }
-
-        weight = finalWeight / dataWeightSources.length;
+        
+        weight = weight * (weightMod / dataWeightSources.length) / 100;
         // Forward the default memo received from the payer.
         memo = _data.memo;
         // Add `this` contract as a Pay Delegate so that it receives a `didPay` call. Don't send any funds to the delegate (keep all funds in the treasury).

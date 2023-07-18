@@ -10,12 +10,12 @@
   },
   "ast": {
     "absolutePath": "test/MyDelegate.t.sol",
-    "id": 55346,
+    "id": 55367,
     "exportedSymbols": {},
     "nodeType": "SourceUnit",
-    "src": "7968:0:145",
+    "src": "8140:0:146",
     "nodes": [],
     "license": "MIT"
   },
-  "id": 145
+  "id": 146
 }

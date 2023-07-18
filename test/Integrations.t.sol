@@ -34,7 +34,7 @@ contract DummyDataSource is IAllowlistDataSource {
 
 
 // Inherits from "./helpers/TestBaseWorkflowV3.sol", called by super.setUp()
-contract MyDelegateTest_Integration is TestBaseWorkflowV3 {
+contract MyDelegateTest_Integration_Unit is TestBaseWorkflowV3 {
     using JBFundingCycleMetadataResolver for JBFundingCycle;
 
     // Project setup params
@@ -157,7 +157,6 @@ contract MyDelegateTest_Integration is TestBaseWorkflowV3 {
             allowList: aList,
             dataSources: dataSources
         });
-
 
 
         // Assemble all of our previous configuration for our project deployer

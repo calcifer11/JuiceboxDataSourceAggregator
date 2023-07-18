@@ -110,19 +110,19 @@
   },
   "ast": {
     "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBTokenUriResolver.sol",
-    "id": 28077,
+    "id": 40475,
     "exportedSymbols": {
       "IJBTokenUriResolver": [
-        28076
+        40474
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:144:36",
+    "src": "32:144:67",
     "nodes": [
       {
-        "id": 28068,
+        "id": 40466,
         "nodeType": "PragmaDirective",
-        "src": "32:23:36",
+        "src": "32:23:67",
         "nodes": [],
         "literals": [
           "solidity",
@@ -132,34 +132,34 @@
         ]
       },
       {
-        "id": 28076,
+        "id": 40474,
         "nodeType": "ContractDefinition",
-        "src": "57:118:36",
+        "src": "57:118:67",
         "nodes": [
           {
-            "id": 28075,
+            "id": 40473,
             "nodeType": "FunctionDefinition",
-            "src": "91:82:36",
+            "src": "91:82:67",
             "nodes": [],
             "functionSelector": "da0544aa",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUri",
-            "nameLocation": "100:6:36",
+            "nameLocation": "100:6:67",
             "parameters": {
-              "id": 28071,
+              "id": 40469,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 28070,
+                  "id": 40468,
                   "mutability": "mutable",
                   "name": "projectId",
-                  "nameLocation": "115:9:36",
+                  "nameLocation": "115:9:67",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28075,
-                  "src": "107:17:36",
+                  "scope": 40473,
+                  "src": "107:17:67",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -167,10 +167,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 28069,
+                    "id": 40467,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "107:7:36",
+                    "src": "107:7:67",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -179,21 +179,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "106:19:36"
+              "src": "106:19:67"
             },
             "returnParameters": {
-              "id": 28074,
+              "id": 40472,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 28073,
+                  "id": 40471,
                   "mutability": "mutable",
                   "name": "tokenUri",
-                  "nameLocation": "163:8:36",
+                  "nameLocation": "163:8:67",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28075,
-                  "src": "149:22:36",
+                  "scope": 40473,
+                  "src": "149:22:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -201,10 +201,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 28072,
+                    "id": 40470,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "149:6:36",
+                    "src": "149:6:67",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -213,9 +213,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "148:24:36"
+              "src": "148:24:67"
             },
-            "scope": 28076,
+            "scope": 40474,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -228,16 +228,16 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          28076
+          40474
         ],
         "name": "IJBTokenUriResolver",
-        "nameLocation": "67:19:36",
-        "scope": 28077,
+        "nameLocation": "67:19:67",
+        "scope": 40475,
         "usedErrors": [],
         "usedEvents": []
       }
     ],
     "license": "MIT"
   },
-  "id": 36
+  "id": 67
 }

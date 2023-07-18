@@ -1,0 +1,21 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/MyDelegate.t.sol",
+    "id": 55346,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "7968:0:145",
+    "nodes": [],
+    "license": "MIT"
+  },
+  "id": 145
+}

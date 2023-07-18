@@ -10,22 +10,22 @@
   },
   "ast": {
     "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation3_1_1.sol",
-    "id": 28425,
+    "id": 41738,
     "exportedSymbols": {
       "IJBRedemptionDelegate3_1_1": [
-        27714
+        39852
       ],
       "JBRedemptionDelegateAllocation3_1_1": [
-        28424
+        41737
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:435:51",
+    "src": "32:435:93",
     "nodes": [
       {
-        "id": 28413,
+        "id": 41726,
         "nodeType": "PragmaDirective",
-        "src": "32:23:51",
+        "src": "32:23:93",
         "nodes": [],
         "literals": [
           "solidity",
@@ -35,24 +35,24 @@
         ]
       },
       {
-        "id": 28415,
+        "id": 41728,
         "nodeType": "ImportDirective",
-        "src": "57:88:51",
+        "src": "57:88:93",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate3_1_1.sol",
         "file": "../interfaces/IJBRedemptionDelegate3_1_1.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 28425,
-        "sourceUnit": 27715,
+        "scope": 41738,
+        "sourceUnit": 39853,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 28414,
+              "id": 41727,
               "name": "IJBRedemptionDelegate3_1_1",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 27714,
-              "src": "65:26:51",
+              "referencedDeclaration": 39852,
+              "src": "65:26:93",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -61,50 +61,50 @@
         "unitAlias": ""
       },
       {
-        "id": 28424,
+        "id": 41737,
         "nodeType": "StructDefinition",
-        "src": "345:121:51",
+        "src": "345:121:93",
         "nodes": [],
         "canonicalName": "JBRedemptionDelegateAllocation3_1_1",
         "documentation": {
-          "id": 28416,
+          "id": 41729,
           "nodeType": "StructuredDocumentation",
-          "src": "147:198:51",
+          "src": "147:198:93",
           "text": "@custom:member delegate A delegate contract to use for subsequent calls.\n @custom:member amount The amount to send to the delegate.\n @custom:member metadata Metadata to pass the delegate."
         },
         "members": [
           {
             "constant": false,
-            "id": 28419,
+            "id": 41732,
             "mutability": "mutable",
             "name": "delegate",
-            "nameLocation": "419:8:51",
+            "nameLocation": "419:8:93",
             "nodeType": "VariableDeclaration",
-            "scope": 28424,
-            "src": "392:35:51",
+            "scope": 41737,
+            "src": "392:35:93",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IJBRedemptionDelegate3_1_1_$27714",
+              "typeIdentifier": "t_contract$_IJBRedemptionDelegate3_1_1_$39852",
               "typeString": "contract IJBRedemptionDelegate3_1_1"
             },
             "typeName": {
-              "id": 28418,
+              "id": 41731,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 28417,
+                "id": 41730,
                 "name": "IJBRedemptionDelegate3_1_1",
                 "nameLocations": [
-                  "392:26:51"
+                  "392:26:93"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 27714,
-                "src": "392:26:51"
+                "referencedDeclaration": 39852,
+                "src": "392:26:93"
               },
-              "referencedDeclaration": 27714,
-              "src": "392:26:51",
+              "referencedDeclaration": 39852,
+              "src": "392:26:93",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IJBRedemptionDelegate3_1_1_$27714",
+                "typeIdentifier": "t_contract$_IJBRedemptionDelegate3_1_1_$39852",
                 "typeString": "contract IJBRedemptionDelegate3_1_1"
               }
             },
@@ -112,13 +112,13 @@
           },
           {
             "constant": false,
-            "id": 28421,
+            "id": 41734,
             "mutability": "mutable",
             "name": "amount",
-            "nameLocation": "439:6:51",
+            "nameLocation": "439:6:93",
             "nodeType": "VariableDeclaration",
-            "scope": 28424,
-            "src": "431:14:51",
+            "scope": 41737,
+            "src": "431:14:93",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -126,10 +126,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 28420,
+              "id": 41733,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "431:7:51",
+              "src": "431:7:93",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -139,13 +139,13 @@
           },
           {
             "constant": false,
-            "id": 28423,
+            "id": 41736,
             "mutability": "mutable",
             "name": "metadata",
-            "nameLocation": "455:8:51",
+            "nameLocation": "455:8:93",
             "nodeType": "VariableDeclaration",
-            "scope": 28424,
-            "src": "449:14:51",
+            "scope": 41737,
+            "src": "449:14:93",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -153,10 +153,10 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 28422,
+              "id": 41735,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
-              "src": "449:5:51",
+              "src": "449:5:93",
               "typeDescriptions": {
                 "typeIdentifier": "t_bytes_storage_ptr",
                 "typeString": "bytes"
@@ -166,12 +166,12 @@
           }
         ],
         "name": "JBRedemptionDelegateAllocation3_1_1",
-        "nameLocation": "352:35:51",
-        "scope": 28425,
+        "nameLocation": "352:35:93",
+        "scope": 41738,
         "visibility": "public"
       }
     ],
     "license": "MIT"
   },
-  "id": 51
+  "id": 93
 }

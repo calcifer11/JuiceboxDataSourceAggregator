@@ -366,25 +366,25 @@
   },
   "ast": {
     "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate3_1_1.sol",
-    "id": 27715,
+    "id": 39853,
     "exportedSymbols": {
       "IERC165": [
-        28710
+        49182
       ],
       "IJBRedemptionDelegate3_1_1": [
-        27714
+        39852
       ],
       "JBDidRedeemData3_1_1": [
-        28191
+        41481
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:746:31",
+    "src": "32:746:59",
     "nodes": [
       {
-        "id": 27699,
+        "id": 39837,
         "nodeType": "PragmaDirective",
-        "src": "32:23:31",
+        "src": "32:23:59",
         "nodes": [],
         "literals": [
           "solidity",
@@ -394,24 +394,24 @@
         ]
       },
       {
-        "id": 27701,
+        "id": 39839,
         "nodeType": "ImportDirective",
-        "src": "57:80:31",
+        "src": "57:80:59",
         "nodes": [],
         "absolutePath": "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
         "file": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 27715,
-        "sourceUnit": 28711,
+        "scope": 39853,
+        "sourceUnit": 49183,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 27700,
+              "id": 39838,
               "name": "IERC165",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28710,
-              "src": "65:7:31",
+              "referencedDeclaration": 49182,
+              "src": "65:7:59",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -420,24 +420,24 @@
         "unitAlias": ""
       },
       {
-        "id": 27703,
+        "id": 39841,
         "nodeType": "ImportDirective",
-        "src": "138:75:31",
+        "src": "138:75:59",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidRedeemData3_1_1.sol",
         "file": "./../structs/JBDidRedeemData3_1_1.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 27715,
-        "sourceUnit": 28192,
+        "scope": 39853,
+        "sourceUnit": 41482,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 27702,
+              "id": 39840,
               "name": "JBDidRedeemData3_1_1",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28191,
-              "src": "146:20:31",
+              "referencedDeclaration": 41481,
+              "src": "146:20:59",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -446,19 +446,19 @@
         "unitAlias": ""
       },
       {
-        "id": 27714,
+        "id": 39852,
         "nodeType": "ContractDefinition",
-        "src": "371:406:31",
+        "src": "371:406:59",
         "nodes": [
           {
-            "id": 27713,
+            "id": 39851,
             "nodeType": "FunctionDefinition",
-            "src": "703:72:31",
+            "src": "703:72:59",
             "nodes": [],
             "documentation": {
-              "id": 27707,
+              "id": 39845,
               "nodeType": "StructuredDocumentation",
-              "src": "423:277:31",
+              "src": "423:277:59",
               "text": "@notice This function is called by JBPaymentTerminal.redeemTokensOf(..), after the execution of its logic\n @dev Critical business logic should be protected by an appropriate access control\n @param data the data passed by the terminal, as a JBDidRedeemData struct:"
             },
             "functionSelector": "0bf46e59",
@@ -466,58 +466,58 @@
             "kind": "function",
             "modifiers": [],
             "name": "didRedeem",
-            "nameLocation": "712:9:31",
+            "nameLocation": "712:9:59",
             "parameters": {
-              "id": 27711,
+              "id": 39849,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27710,
+                  "id": 39848,
                   "mutability": "mutable",
                   "name": "data",
-                  "nameLocation": "752:4:31",
+                  "nameLocation": "752:4:59",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27713,
-                  "src": "722:34:31",
+                  "scope": 39851,
+                  "src": "722:34:59",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_JBDidRedeemData3_1_1_$28191_calldata_ptr",
+                    "typeIdentifier": "t_struct$_JBDidRedeemData3_1_1_$41481_calldata_ptr",
                     "typeString": "struct JBDidRedeemData3_1_1"
                   },
                   "typeName": {
-                    "id": 27709,
+                    "id": 39847,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27708,
+                      "id": 39846,
                       "name": "JBDidRedeemData3_1_1",
                       "nameLocations": [
-                        "722:20:31"
+                        "722:20:59"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 28191,
-                      "src": "722:20:31"
+                      "referencedDeclaration": 41481,
+                      "src": "722:20:59"
                     },
-                    "referencedDeclaration": 28191,
-                    "src": "722:20:31",
+                    "referencedDeclaration": 41481,
+                    "src": "722:20:59",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_JBDidRedeemData3_1_1_$28191_storage_ptr",
+                      "typeIdentifier": "t_struct$_JBDidRedeemData3_1_1_$41481_storage_ptr",
                       "typeString": "struct JBDidRedeemData3_1_1"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "721:36:31"
+              "src": "721:36:59"
             },
             "returnParameters": {
-              "id": 27712,
+              "id": 39850,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "774:0:31"
+              "src": "774:0:59"
             },
-            "scope": 27714,
+            "scope": 39852,
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "external"
@@ -527,42 +527,42 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 27705,
+              "id": 39843,
               "name": "IERC165",
               "nameLocations": [
-                "411:7:31"
+                "411:7:59"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 28710,
-              "src": "411:7:31"
+              "referencedDeclaration": 49182,
+              "src": "411:7:59"
             },
-            "id": 27706,
+            "id": 39844,
             "nodeType": "InheritanceSpecifier",
-            "src": "411:7:31"
+            "src": "411:7:59"
           }
         ],
         "canonicalName": "IJBRedemptionDelegate3_1_1",
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 27704,
+          "id": 39842,
           "nodeType": "StructuredDocumentation",
-          "src": "215:156:31",
+          "src": "215:156:59",
           "text": "@title Redemption delegate\n @notice Delegate called after JBTerminal.redeemTokensOf(..) logic completion (if passed by the funding cycle datasource)"
         },
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          27714,
-          28710
+          39852,
+          49182
         ],
         "name": "IJBRedemptionDelegate3_1_1",
-        "nameLocation": "381:26:31",
-        "scope": 27715,
+        "nameLocation": "381:26:59",
+        "scope": 39853,
         "usedErrors": [],
         "usedEvents": []
       }
     ],
     "license": "MIT"
   },
-  "id": 31
+  "id": 59
 }

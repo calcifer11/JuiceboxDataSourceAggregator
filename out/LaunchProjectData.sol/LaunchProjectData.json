@@ -10,37 +10,37 @@
   },
   "ast": {
     "absolutePath": "src/structs/LaunchProjectData.sol",
-    "id": 29963,
+    "id": 54845,
     "exportedSymbols": {
       "IJBPaymentTerminal": [
-        27615
+        39241
       ],
       "JBFundAccessConstraints": [
-        28210
+        41512
       ],
       "JBFundingCycleData": [
-        28250
+        41552
       ],
       "JBFundingCycleMetadata": [
-        28293
+        41595
       ],
       "JBGroupedSplits": [
-        28315
+        41617
       ],
       "JBProjectMetadata": [
-        28377
+        41690
       ],
       "LaunchProjectData": [
-        29962
+        54844
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:2148:67",
+    "src": "32:2148:144",
     "nodes": [
       {
-        "id": 29923,
+        "id": 54805,
         "nodeType": "PragmaDirective",
-        "src": "32:23:67",
+        "src": "32:23:144",
         "nodes": [],
         "literals": [
           "solidity",
@@ -50,24 +50,24 @@
         ]
       },
       {
-        "id": 29925,
+        "id": 54807,
         "nodeType": "ImportDirective",
-        "src": "57:112:67",
+        "src": "57:112:144",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29963,
-        "sourceUnit": 27616,
+        "scope": 54845,
+        "sourceUnit": 39242,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29924,
+              "id": 54806,
               "name": "IJBPaymentTerminal",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 27615,
-              "src": "65:18:67",
+              "referencedDeclaration": 39241,
+              "src": "65:18:144",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -76,24 +76,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29927,
+        "id": 54809,
         "nodeType": "ImportDirective",
-        "src": "170:119:67",
+        "src": "170:119:144",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundAccessConstraints.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundAccessConstraints.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29963,
-        "sourceUnit": 28211,
+        "scope": 54845,
+        "sourceUnit": 41513,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29926,
+              "id": 54808,
               "name": "JBFundAccessConstraints",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28210,
-              "src": "178:23:67",
+              "referencedDeclaration": 41512,
+              "src": "178:23:144",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -102,24 +102,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29929,
+        "id": 54811,
         "nodeType": "ImportDirective",
-        "src": "290:109:67",
+        "src": "290:109:144",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycleData.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycleData.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29963,
-        "sourceUnit": 28251,
+        "scope": 54845,
+        "sourceUnit": 41553,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29928,
+              "id": 54810,
               "name": "JBFundingCycleData",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28250,
-              "src": "298:18:67",
+              "referencedDeclaration": 41552,
+              "src": "298:18:144",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -128,24 +128,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29931,
+        "id": 54813,
         "nodeType": "ImportDirective",
-        "src": "400:117:67",
+        "src": "400:117:144",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycleMetadata.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycleMetadata.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29963,
-        "sourceUnit": 28294,
+        "scope": 54845,
+        "sourceUnit": 41596,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29930,
+              "id": 54812,
               "name": "JBFundingCycleMetadata",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28293,
-              "src": "408:22:67",
+              "referencedDeclaration": 41595,
+              "src": "408:22:144",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -154,24 +154,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29933,
+        "id": 54815,
         "nodeType": "ImportDirective",
-        "src": "518:103:67",
+        "src": "518:103:144",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBGroupedSplits.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/structs/JBGroupedSplits.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29963,
-        "sourceUnit": 28316,
+        "scope": 54845,
+        "sourceUnit": 41618,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29932,
+              "id": 54814,
               "name": "JBGroupedSplits",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28315,
-              "src": "526:15:67",
+              "referencedDeclaration": 41617,
+              "src": "526:15:144",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -180,24 +180,24 @@
         "unitAlias": ""
       },
       {
-        "id": 29935,
+        "id": 54817,
         "nodeType": "ImportDirective",
-        "src": "622:107:67",
+        "src": "622:107:144",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBProjectMetadata.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/structs/JBProjectMetadata.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29963,
-        "sourceUnit": 28378,
+        "scope": 54845,
+        "sourceUnit": 41691,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29934,
+              "id": 54816,
               "name": "JBProjectMetadata",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 28377,
-              "src": "630:17:67",
+              "referencedDeclaration": 41690,
+              "src": "630:17:144",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -206,50 +206,50 @@
         "unitAlias": ""
       },
       {
-        "id": 29962,
+        "id": 54844,
         "nodeType": "StructDefinition",
-        "src": "1871:308:67",
+        "src": "1871:308:144",
         "nodes": [],
         "canonicalName": "LaunchProjectData",
         "documentation": {
-          "id": 29936,
+          "id": 54818,
           "nodeType": "StructuredDocumentation",
-          "src": "731:1140:67",
+          "src": "731:1140:144",
           "text": "@custom:member projectMetadata Metadata to associate with the project within a particular domain. This can be updated any time by the owner of the project.\n @custom:member data Data that defines the project's first funding cycle. These properties will remain fixed for the duration of the funding cycle.\n @custom:member metadata Metadata specifying the controller specific params that a funding cycle can have. These properties will remain fixed for the duration of the funding cycle.\n @custom:member mustStartAtOrAfter The time before which the configured funding cycle cannot start.\n @custom:member groupedSplits An array of splits to set for any number of groups.\n @custom:member fundAccessConstraints An array containing amounts that a project can use from its treasury for each payment terminal. Amounts are fixed point numbers using the same number of decimals as the accompanying terminal. The `_distributionLimit` and `_overflowAllowance` parameters must fit in a `uint232`.\n @custom:member terminals Payment terminals to add for the project.\n @custom:member memo A memo to pass along to the emitted event."
         },
         "members": [
           {
             "constant": false,
-            "id": 29939,
+            "id": 54821,
             "mutability": "mutable",
             "name": "projectMetadata",
-            "nameLocation": "1920:15:67",
+            "nameLocation": "1920:15:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "1902:33:67",
+            "scope": 54844,
+            "src": "1902:33:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_JBProjectMetadata_$28377_storage_ptr",
+              "typeIdentifier": "t_struct$_JBProjectMetadata_$41690_storage_ptr",
               "typeString": "struct JBProjectMetadata"
             },
             "typeName": {
-              "id": 29938,
+              "id": 54820,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 29937,
+                "id": 54819,
                 "name": "JBProjectMetadata",
                 "nameLocations": [
-                  "1902:17:67"
+                  "1902:17:144"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 28377,
-                "src": "1902:17:67"
+                "referencedDeclaration": 41690,
+                "src": "1902:17:144"
               },
-              "referencedDeclaration": 28377,
-              "src": "1902:17:67",
+              "referencedDeclaration": 41690,
+              "src": "1902:17:144",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_JBProjectMetadata_$28377_storage_ptr",
+                "typeIdentifier": "t_struct$_JBProjectMetadata_$41690_storage_ptr",
                 "typeString": "struct JBProjectMetadata"
               }
             },
@@ -257,36 +257,36 @@
           },
           {
             "constant": false,
-            "id": 29942,
+            "id": 54824,
             "mutability": "mutable",
             "name": "data",
-            "nameLocation": "1960:4:67",
+            "nameLocation": "1960:4:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "1941:23:67",
+            "scope": 54844,
+            "src": "1941:23:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_JBFundingCycleData_$28250_storage_ptr",
+              "typeIdentifier": "t_struct$_JBFundingCycleData_$41552_storage_ptr",
               "typeString": "struct JBFundingCycleData"
             },
             "typeName": {
-              "id": 29941,
+              "id": 54823,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 29940,
+                "id": 54822,
                 "name": "JBFundingCycleData",
                 "nameLocations": [
-                  "1941:18:67"
+                  "1941:18:144"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 28250,
-                "src": "1941:18:67"
+                "referencedDeclaration": 41552,
+                "src": "1941:18:144"
               },
-              "referencedDeclaration": 28250,
-              "src": "1941:18:67",
+              "referencedDeclaration": 41552,
+              "src": "1941:18:144",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_JBFundingCycleData_$28250_storage_ptr",
+                "typeIdentifier": "t_struct$_JBFundingCycleData_$41552_storage_ptr",
                 "typeString": "struct JBFundingCycleData"
               }
             },
@@ -294,36 +294,36 @@
           },
           {
             "constant": false,
-            "id": 29945,
+            "id": 54827,
             "mutability": "mutable",
             "name": "metadata",
-            "nameLocation": "1993:8:67",
+            "nameLocation": "1993:8:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "1970:31:67",
+            "scope": 54844,
+            "src": "1970:31:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_JBFundingCycleMetadata_$28293_storage_ptr",
+              "typeIdentifier": "t_struct$_JBFundingCycleMetadata_$41595_storage_ptr",
               "typeString": "struct JBFundingCycleMetadata"
             },
             "typeName": {
-              "id": 29944,
+              "id": 54826,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 29943,
+                "id": 54825,
                 "name": "JBFundingCycleMetadata",
                 "nameLocations": [
-                  "1970:22:67"
+                  "1970:22:144"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 28293,
-                "src": "1970:22:67"
+                "referencedDeclaration": 41595,
+                "src": "1970:22:144"
               },
-              "referencedDeclaration": 28293,
-              "src": "1970:22:67",
+              "referencedDeclaration": 41595,
+              "src": "1970:22:144",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_JBFundingCycleMetadata_$28293_storage_ptr",
+                "typeIdentifier": "t_struct$_JBFundingCycleMetadata_$41595_storage_ptr",
                 "typeString": "struct JBFundingCycleMetadata"
               }
             },
@@ -331,13 +331,13 @@
           },
           {
             "constant": false,
-            "id": 29947,
+            "id": 54829,
             "mutability": "mutable",
             "name": "mustStartAtOrAfter",
-            "nameLocation": "2015:18:67",
+            "nameLocation": "2015:18:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "2007:26:67",
+            "scope": 54844,
+            "src": "2007:26:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -345,10 +345,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29946,
+              "id": 54828,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "2007:7:67",
+              "src": "2007:7:144",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -358,45 +358,45 @@
           },
           {
             "constant": false,
-            "id": 29951,
+            "id": 54833,
             "mutability": "mutable",
             "name": "groupedSplits",
-            "nameLocation": "2057:13:67",
+            "nameLocation": "2057:13:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "2039:31:67",
+            "scope": 54844,
+            "src": "2039:31:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_JBGroupedSplits_$28315_storage_$dyn_storage_ptr",
+              "typeIdentifier": "t_array$_t_struct$_JBGroupedSplits_$41617_storage_$dyn_storage_ptr",
               "typeString": "struct JBGroupedSplits[]"
             },
             "typeName": {
               "baseType": {
-                "id": 29949,
+                "id": 54831,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29948,
+                  "id": 54830,
                   "name": "JBGroupedSplits",
                   "nameLocations": [
-                    "2039:15:67"
+                    "2039:15:144"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 28315,
-                  "src": "2039:15:67"
+                  "referencedDeclaration": 41617,
+                  "src": "2039:15:144"
                 },
-                "referencedDeclaration": 28315,
-                "src": "2039:15:67",
+                "referencedDeclaration": 41617,
+                "src": "2039:15:144",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_JBGroupedSplits_$28315_storage_ptr",
+                  "typeIdentifier": "t_struct$_JBGroupedSplits_$41617_storage_ptr",
                   "typeString": "struct JBGroupedSplits"
                 }
               },
-              "id": 29950,
+              "id": 54832,
               "nodeType": "ArrayTypeName",
-              "src": "2039:17:67",
+              "src": "2039:17:144",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_JBGroupedSplits_$28315_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_JBGroupedSplits_$41617_storage_$dyn_storage_ptr",
                 "typeString": "struct JBGroupedSplits[]"
               }
             },
@@ -404,45 +404,45 @@
           },
           {
             "constant": false,
-            "id": 29955,
+            "id": 54837,
             "mutability": "mutable",
             "name": "fundAccessConstraints",
-            "nameLocation": "2102:21:67",
+            "nameLocation": "2102:21:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "2076:47:67",
+            "scope": 54844,
+            "src": "2076:47:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_JBFundAccessConstraints_$28210_storage_$dyn_storage_ptr",
+              "typeIdentifier": "t_array$_t_struct$_JBFundAccessConstraints_$41512_storage_$dyn_storage_ptr",
               "typeString": "struct JBFundAccessConstraints[]"
             },
             "typeName": {
               "baseType": {
-                "id": 29953,
+                "id": 54835,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29952,
+                  "id": 54834,
                   "name": "JBFundAccessConstraints",
                   "nameLocations": [
-                    "2076:23:67"
+                    "2076:23:144"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 28210,
-                  "src": "2076:23:67"
+                  "referencedDeclaration": 41512,
+                  "src": "2076:23:144"
                 },
-                "referencedDeclaration": 28210,
-                "src": "2076:23:67",
+                "referencedDeclaration": 41512,
+                "src": "2076:23:144",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_JBFundAccessConstraints_$28210_storage_ptr",
+                  "typeIdentifier": "t_struct$_JBFundAccessConstraints_$41512_storage_ptr",
                   "typeString": "struct JBFundAccessConstraints"
                 }
               },
-              "id": 29954,
+              "id": 54836,
               "nodeType": "ArrayTypeName",
-              "src": "2076:25:67",
+              "src": "2076:25:144",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_JBFundAccessConstraints_$28210_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_JBFundAccessConstraints_$41512_storage_$dyn_storage_ptr",
                 "typeString": "struct JBFundAccessConstraints[]"
               }
             },
@@ -450,45 +450,45 @@
           },
           {
             "constant": false,
-            "id": 29959,
+            "id": 54841,
             "mutability": "mutable",
             "name": "terminals",
-            "nameLocation": "2150:9:67",
+            "nameLocation": "2150:9:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "2129:30:67",
+            "scope": 54844,
+            "src": "2129:30:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_contract$_IJBPaymentTerminal_$27615_$dyn_storage_ptr",
+              "typeIdentifier": "t_array$_t_contract$_IJBPaymentTerminal_$39241_$dyn_storage_ptr",
               "typeString": "contract IJBPaymentTerminal[]"
             },
             "typeName": {
               "baseType": {
-                "id": 29957,
+                "id": 54839,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 29956,
+                  "id": 54838,
                   "name": "IJBPaymentTerminal",
                   "nameLocations": [
-                    "2129:18:67"
+                    "2129:18:144"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 27615,
-                  "src": "2129:18:67"
+                  "referencedDeclaration": 39241,
+                  "src": "2129:18:144"
                 },
-                "referencedDeclaration": 27615,
-                "src": "2129:18:67",
+                "referencedDeclaration": 39241,
+                "src": "2129:18:144",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_contract$_IJBPaymentTerminal_$27615",
+                  "typeIdentifier": "t_contract$_IJBPaymentTerminal_$39241",
                   "typeString": "contract IJBPaymentTerminal"
                 }
               },
-              "id": 29958,
+              "id": 54840,
               "nodeType": "ArrayTypeName",
-              "src": "2129:20:67",
+              "src": "2129:20:144",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_contract$_IJBPaymentTerminal_$27615_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_contract$_IJBPaymentTerminal_$39241_$dyn_storage_ptr",
                 "typeString": "contract IJBPaymentTerminal[]"
               }
             },
@@ -496,13 +496,13 @@
           },
           {
             "constant": false,
-            "id": 29961,
+            "id": 54843,
             "mutability": "mutable",
             "name": "memo",
-            "nameLocation": "2172:4:67",
+            "nameLocation": "2172:4:144",
             "nodeType": "VariableDeclaration",
-            "scope": 29962,
-            "src": "2165:11:67",
+            "scope": 54844,
+            "src": "2165:11:144",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -510,10 +510,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 29960,
+              "id": 54842,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "2165:6:67",
+              "src": "2165:6:144",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -523,12 +523,12 @@
           }
         ],
         "name": "LaunchProjectData",
-        "nameLocation": "1878:17:67",
-        "scope": 29963,
+        "nameLocation": "1878:17:144",
+        "scope": 54845,
         "visibility": "public"
       }
     ],
     "license": "MIT"
   },
-  "id": 67
+  "id": 144
 }

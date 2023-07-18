@@ -45,20 +45,20 @@
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b5060f88061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063babcc539146037578063d63a8e11146074575b600080fd5b606060423660046094565b6001600160a01b031660009081526020819052604090205460ff1690565b604051901515815260200160405180910390f35b6060607f3660046094565b60006020819052908152604090205460ff1681565b60006020828403121560a557600080fd5b81356001600160a01b038116811460bb57600080fd5b939250505056fea264697066735822122038d11677cd1405f11efefb48e0212dab5c129b386dfa653f547588342c554eaa64736f6c63430008140033",
-    "sourceMap": "26:214:60:-:0;;;;;;;;;;;;;;;;;;;",
+    "object": "0x608060405234801561001057600080fd5b5060f88061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063babcc539146037578063d63a8e11146074575b600080fd5b606060423660046094565b6001600160a01b031660009081526020819052604090205460ff1690565b604051901515815260200160405180910390f35b6060607f3660046094565b60006020819052908152604090205460ff1681565b60006020828403121560a557600080fd5b81356001600160a01b038116811460bb57600080fd5b939250505056fea2646970667358221220174e4a66859b9e9b9e19a0d6f6423f499065d82a005bd6aba602a13ec752434d64736f6c63430008140033",
+    "sourceMap": "58:214:137:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063babcc539146037578063d63a8e11146074575b600080fd5b606060423660046094565b6001600160a01b031660009081526020819052604090205460ff1690565b604051901515815260200160405180910390f35b6060607f3660046094565b60006020819052908152604090205460ff1681565b60006020828403121560a557600080fd5b81356001600160a01b038116811460bb57600080fd5b939250505056fea264697066735822122038d11677cd1405f11efefb48e0212dab5c129b386dfa653f547588342c554eaa64736f6c63430008140033",
-    "sourceMap": "26:214:60:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;133:105;;;;;;:::i;:::-;-1:-1:-1;;;;;214:17:60;191:4;214:17;;;;;;;;;;;;;;133:105;;;;470:14:70;;463:22;445:41;;433:2;418:18;133:105:60;;;;;;;87:39;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;14:286:70;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:70;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:70:o",
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063babcc539146037578063d63a8e11146074575b600080fd5b606060423660046094565b6001600160a01b031660009081526020819052604090205460ff1690565b604051901515815260200160405180910390f35b6060607f3660046094565b60006020819052908152604090205460ff1681565b60006020828403121560a557600080fd5b81356001600160a01b038116811460bb57600080fd5b939250505056fea2646970667358221220174e4a66859b9e9b9e19a0d6f6423f499065d82a005bd6aba602a13ec752434d64736f6c63430008140033",
+    "sourceMap": "58:214:137:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;165:105;;;;;;:::i;:::-;-1:-1:-1;;;;;246:17:137;223:4;246:17;;;;;;;;;;;;;;165:105;;;;470:14:150;;463:22;445:41;;433:2;418:18;165:105:137;;;;;;;119:39;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;14:286:150;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:150;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:150:o",
     "linkReferences": {}
   },
   "methodIdentifiers": {
     "allowed(address)": "d63a8e11",
     "isAllowed(address)": "babcc539"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NOT_ALLOWED\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"allowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"isAllowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/AllowlistDataSource.sol\":\"AllowlistDataSource\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"src/AllowlistDataSource.sol\":{\"keccak256\":\"0x6faf1d5f46ed5e289bb7e61491afc6d530c4e6effec13be5f3e517e107e09b5c\",\"urls\":[\"bzz-raw://753387613e2f23dd20fcf8e086dc6ed8258604c79afcd4f5d1c8214bfdd443f2\",\"dweb:/ipfs/QmWME6uEtq45WKUapFuoBUayXSyc2vTkAAg87iwgewxuMF\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NOT_ALLOWED\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"allowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"isAllowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/AllowlistDataSource.sol\":\"AllowlistDataSource\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"src/AllowlistDataSource.sol\":{\"keccak256\":\"0x0feb8ec398e5680594ef9b62b98fe3c7f2d329cd843477c96823925b3cb2d166\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6f642929caf2e77c63f13c92fff44cef461deb209ab58377ef73251bb2096560\",\"dweb:/ipfs/Qmdfb48QmYjBMNuCG7GPe6N9Se1EmvAqZraB7faisVNLLw\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.20+commit.a1b79de6"
@@ -147,31 +147,31 @@
     },
     "sources": {
       "src/AllowlistDataSource.sol": {
-        "keccak256": "0x6faf1d5f46ed5e289bb7e61491afc6d530c4e6effec13be5f3e517e107e09b5c",
+        "keccak256": "0x0feb8ec398e5680594ef9b62b98fe3c7f2d329cd843477c96823925b3cb2d166",
         "urls": [
-          "bzz-raw://753387613e2f23dd20fcf8e086dc6ed8258604c79afcd4f5d1c8214bfdd443f2",
-          "dweb:/ipfs/QmWME6uEtq45WKUapFuoBUayXSyc2vTkAAg87iwgewxuMF"
+          "bzz-raw://6f642929caf2e77c63f13c92fff44cef461deb209ab58377ef73251bb2096560",
+          "dweb:/ipfs/Qmdfb48QmYjBMNuCG7GPe6N9Se1EmvAqZraB7faisVNLLw"
         ],
-        "license": null
+        "license": "MIT"
       }
     },
     "version": 1
   },
   "ast": {
     "absolutePath": "src/AllowlistDataSource.sol",
-    "id": 28840,
+    "id": 53722,
     "exportedSymbols": {
       "AllowlistDataSource": [
-        28839
+        53721
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "0:241:60",
+    "src": "32:241:137",
     "nodes": [
       {
-        "id": 28820,
+        "id": 53702,
         "nodeType": "PragmaDirective",
-        "src": "0:24:60",
+        "src": "32:24:137",
         "nodes": [],
         "literals": [
           "solidity",
@@ -181,36 +181,36 @@
         ]
       },
       {
-        "id": 28839,
+        "id": 53721,
         "nodeType": "ContractDefinition",
-        "src": "26:214:60",
+        "src": "58:214:137",
         "nodes": [
           {
-            "id": 28822,
+            "id": 53704,
             "nodeType": "ErrorDefinition",
-            "src": "61:20:60",
+            "src": "93:20:137",
             "nodes": [],
             "errorSelector": "95c31a56",
             "name": "NOT_ALLOWED",
-            "nameLocation": "67:11:60",
+            "nameLocation": "99:11:137",
             "parameters": {
-              "id": 28821,
+              "id": 53703,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "78:2:60"
+              "src": "110:2:137"
             }
           },
           {
-            "id": 28826,
+            "id": 53708,
             "nodeType": "VariableDeclaration",
-            "src": "87:39:60",
+            "src": "119:39:137",
             "nodes": [],
             "constant": false,
             "functionSelector": "d63a8e11",
             "mutability": "mutable",
             "name": "allowed",
-            "nameLocation": "119:7:60",
-            "scope": 28839,
+            "nameLocation": "151:7:137",
+            "scope": 53721,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -218,21 +218,21 @@
               "typeString": "mapping(address => bool)"
             },
             "typeName": {
-              "id": 28825,
+              "id": 53707,
               "keyName": "",
               "keyNameLocation": "-1:-1:-1",
               "keyType": {
-                "id": 28823,
+                "id": 53705,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "95:7:60",
+                "src": "127:7:137",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "87:24:60",
+              "src": "119:24:137",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                 "typeString": "mapping(address => bool)"
@@ -240,10 +240,10 @@
               "valueName": "",
               "valueNameLocation": "-1:-1:-1",
               "valueType": {
-                "id": 28824,
+                "id": 53706,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "106:4:60",
+                "src": "138:4:137",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -253,38 +253,38 @@
             "visibility": "public"
           },
           {
-            "id": 28838,
+            "id": 53720,
             "nodeType": "FunctionDefinition",
-            "src": "133:105:60",
+            "src": "165:105:137",
             "nodes": [],
             "body": {
-              "id": 28837,
+              "id": 53719,
               "nodeType": "Block",
-              "src": "197:41:60",
+              "src": "229:41:137",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 28833,
+                      "id": 53715,
                       "name": "allowed",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 28826,
-                      "src": "214:7:60",
+                      "referencedDeclaration": 53708,
+                      "src": "246:7:137",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                         "typeString": "mapping(address => bool)"
                       }
                     },
-                    "id": 28835,
+                    "id": 53717,
                     "indexExpression": {
-                      "id": 28834,
+                      "id": 53716,
                       "name": "_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 28828,
-                      "src": "222:8:60",
+                      "referencedDeclaration": 53710,
+                      "src": "254:8:137",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -295,16 +295,16 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "214:17:60",
+                    "src": "246:17:137",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 28832,
-                  "id": 28836,
+                  "functionReturnParameters": 53714,
+                  "id": 53718,
                   "nodeType": "Return",
-                  "src": "207:24:60"
+                  "src": "239:24:137"
                 }
               ]
             },
@@ -313,20 +313,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "isAllowed",
-            "nameLocation": "142:9:60",
+            "nameLocation": "174:9:137",
             "parameters": {
-              "id": 28829,
+              "id": 53711,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 28828,
+                  "id": 53710,
                   "mutability": "mutable",
                   "name": "_address",
-                  "nameLocation": "160:8:60",
+                  "nameLocation": "192:8:137",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28838,
-                  "src": "152:16:60",
+                  "scope": 53720,
+                  "src": "184:16:137",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -334,10 +334,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 28827,
+                    "id": 53709,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "152:7:60",
+                    "src": "184:7:137",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -347,21 +347,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "151:18:60"
+              "src": "183:18:137"
             },
             "returnParameters": {
-              "id": 28832,
+              "id": 53714,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 28831,
+                  "id": 53713,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28838,
-                  "src": "191:4:60",
+                  "scope": 53720,
+                  "src": "223:4:137",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -369,10 +369,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 28830,
+                    "id": 53712,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "191:4:60",
+                    "src": "223:4:137",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -381,9 +381,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "190:6:60"
+              "src": "222:6:137"
             },
-            "scope": 28839,
+            "scope": 53721,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -396,17 +396,18 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          28839
+          53721
         ],
         "name": "AllowlistDataSource",
-        "nameLocation": "35:19:60",
-        "scope": 28840,
+        "nameLocation": "67:19:137",
+        "scope": 53722,
         "usedErrors": [
-          28822
+          53704
         ],
         "usedEvents": []
       }
-    ]
+    ],
+    "license": "MIT"
   },
-  "id": 60
+  "id": 137
 }

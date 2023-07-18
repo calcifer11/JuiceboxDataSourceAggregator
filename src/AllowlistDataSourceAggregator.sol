@@ -4,20 +4,16 @@ pragma solidity ^0.8.19;
 // import {mulDiv} from '@prb/math/src/Common.sol';
 import {IERC165} from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 import {IJBDirectory} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol";
-import {IJBFundingCycleDataSource3_1_1} from
-    "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource3_1_1.sol";
+import {IJBFundingCycleDataSource3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource3_1_1.sol";
 import {IJBPayDelegate3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPayDelegate3_1_1.sol";
 import {IJBPaymentTerminal} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol";
-import {IJBRedemptionDelegate3_1_1} from
-    "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate3_1_1.sol";
+import {IJBRedemptionDelegate3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate3_1_1.sol";
 import {JBPayParamsData} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayParamsData.sol";
 import {JBDidPayData3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidPayData3_1_1.sol";
 import {JBDidRedeemData3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidRedeemData3_1_1.sol";
 import {JBRedeemParamsData} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedeemParamsData.sol";
-import {JBPayDelegateAllocation3_1_1} from
-    "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation3_1_1.sol";
-import {JBRedemptionDelegateAllocation3_1_1} from
-    "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation3_1_1.sol";
+import {JBPayDelegateAllocation3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation3_1_1.sol";
+import {JBRedemptionDelegateAllocation3_1_1} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation3_1_1.sol";
 import {DeployMyDelegateData} from "./structs/DeployMyDelegateData.sol";
 
 /// @notice A contract that is a Data Source, a Pay Delegate, and a Redemption Delegate.
@@ -43,6 +39,8 @@ contract AllowlistDataSourceAggregator is
     IJBDirectory public directory;
 
     address[] public dataSources;
+    /// @dev String for signing the allow
+    string allowstring = "Allowed by: ";
 
     /// @notice This function gets called when the project receives a payment.
     /// @dev Part of IJBFundingCycleDataSource.
@@ -60,14 +58,27 @@ contract AllowlistDataSourceAggregator is
     {
         bool isAllowed = false;
 
+        /// @dev Calls all Allowlist data sources and checks if any of them allow the address
         for (uint256 i = 0; i < dataSources.length; i++) {
             IAllowlistDataSource dataSource = IAllowlistDataSource(dataSources[i]);
             if (dataSource.isAllowed(_data.payer)) {
                 isAllowed = true;
+                
+                /// @dev Setting up string for traceability
+                allowstring = string(abi.encodePacked(allowstring,datasources[i].address));
+                if(!_data.memo)
+                {
+                    _data.memo = allowstring;
+                }
+                else
+                {
+                    _data.memo = string(abi.encodePacked(_data.memo,allowstring));
+                }
                 break;
             }
         }
 
+        /// @dev If none of the data sources allow the address, revert
         if (!isAllowed) revert PAYER_NOT_ON_ALLOWLIST(_data.payer);
         // Forward the default weight received from the protocol.
         weight = _data.weight;

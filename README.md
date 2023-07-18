@@ -16,6 +16,54 @@
 5. Deploy the contracts to your preferred Ethereum development network.
 6. Interact with the deployed contracts by calling their functions.
 
+## Isolated usage examples
+**Allow List Aggregation**
+```
+// Example usage of AllowlistDataSourceAggregator contract
+contract MyProject {
+    AllowlistDataSourceAggregator private allowlistAggregator;
+
+    constructor(address[] memory dataSources) {
+        // Deploy the AllowlistDataSourceAggregator contract
+        allowlistAggregator = new AllowlistDataSourceAggregator();
+
+        // Initialize the aggregator with data sources
+        allowlistAggregator.initialize(projectId, directory, deployMyDelegateData);
+    }
+
+    function processPayment(address payer) public {
+        // Check if the payer is allowed using the allow list aggregator
+        bool isAllowed = allowlistAggregator.isAllowed(payer);
+
+        // Process the payment based on the allow list result
+        // ...
+    }
+}
+```
+**Weight Aggregation**
+```
+// Example usage of DataWeightAggregator contract
+contract MyProject {
+    DataWeightAggregator private weightAggregator;
+
+    constructor(address[] memory dataSources) {
+        // Deploy the DataWeightAggregator contract
+        weightAggregator = new DataWeightAggregator();
+
+        // Add data sources to the aggregator
+        for (uint256 i = 0; i < dataSources.length; i++) {
+            weightAggregator.addDataSources(dataSources[i]);
+        }
+    }
+
+    function adjustWeight(uint256 baseWeight) public view returns (uint256 adjustedWeight) {
+        // Get the adjusted weight using the weight aggregator
+        adjustedWeight = weightAggregator.calculateAdjustedWeight(baseWeight);
+
+        return adjustedWeight;
+    }
+}
+```
 ## Contributing
 
 👍 Contributions are welcome! If you have any ideas, suggestions, or improvements, please open an issue or submit a pull request. Let's make this project even better together!

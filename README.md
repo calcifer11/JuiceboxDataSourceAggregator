@@ -12,7 +12,7 @@
 1. Clone this repository: `git clone <repository-url>`
 2. Navigate to the cloned directory: `cd data-aggregator-contracts`
 3. Install Forge with `curl -L https://foundry.paradigm.xyz | bash`. If you already have Foundry installed, run `foundryup` to update to the latest version. More detailed instructions can be found in the [Foundry Book](https://book.getfoundry.sh/getting-started/installation).
-4. Follow the instructions in the [Yarn Docs](https://classic.yarnpkg.com/en/docs/install). People tend to use the latest version of Yarn 1 (not Yarn 2+).
+4. Run tests (yarn test or forge test)
 5. Deploy the contracts to your preferred Ethereum development network.
 6. Interact with the deployed contracts by calling their functions.
 

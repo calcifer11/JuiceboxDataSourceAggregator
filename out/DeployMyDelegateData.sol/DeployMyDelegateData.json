@@ -10,19 +10,19 @@
   },
   "ast": {
     "absolutePath": "src/structs/DeployMyDelegateData.sol",
-    "id": 55079,
+    "id": 55218,
     "exportedSymbols": {
       "DeployMyDelegateData": [
-        55078
+        55217
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:137:142",
+    "src": "33:168:141",
     "nodes": [
       {
-        "id": 55074,
+        "id": 55211,
         "nodeType": "PragmaDirective",
-        "src": "32:23:142",
+        "src": "33:23:141",
         "nodes": [],
         "literals": [
           "solidity",
@@ -32,21 +32,21 @@
         ]
       },
       {
-        "id": 55078,
+        "id": 55217,
         "nodeType": "StructDefinition",
-        "src": "110:58:142",
+        "src": "114:85:141",
         "nodes": [],
         "canonicalName": "DeployMyDelegateData",
         "members": [
           {
             "constant": false,
-            "id": 55077,
+            "id": 55214,
             "mutability": "mutable",
             "name": "dataSources",
-            "nameLocation": "154:11:142",
+            "nameLocation": "159:11:141",
             "nodeType": "VariableDeclaration",
-            "scope": 55078,
-            "src": "144:21:142",
+            "scope": 55217,
+            "src": "149:21:141",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -55,34 +55,62 @@
             },
             "typeName": {
               "baseType": {
-                "id": 55075,
+                "id": 55212,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "144:7:142",
+                "src": "149:7:141",
                 "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 55076,
+              "id": 55213,
               "nodeType": "ArrayTypeName",
-              "src": "144:9:142",
+              "src": "149:9:141",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
               }
             },
             "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 55216,
+            "mutability": "mutable",
+            "name": "governance",
+            "nameLocation": "185:10:141",
+            "nodeType": "VariableDeclaration",
+            "scope": 55217,
+            "src": "177:18:141",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 55215,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "177:7:141",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
           }
         ],
         "name": "DeployMyDelegateData",
-        "nameLocation": "117:20:142",
-        "scope": 55079,
+        "nameLocation": "121:20:141",
+        "scope": 55218,
         "visibility": "public"
       }
     ],
     "license": "MIT"
   },
-  "id": 142
+  "id": 141
 }

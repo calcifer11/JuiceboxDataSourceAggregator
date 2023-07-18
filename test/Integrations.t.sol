@@ -150,7 +150,8 @@ contract MyDelegateTest_Integration_Unit is TestBaseWorkflowV3 {
 
         // The imported struct used by our delegate
         delegateData = DeployMyDelegateData({
-            dataSources: dataSources
+            dataSources: dataSources,
+            governance: msg.sender
         });
 
 

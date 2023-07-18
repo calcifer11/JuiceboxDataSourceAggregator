@@ -43,9 +43,8 @@ contract AllowlistDataSourceAggregator is
     /// @notice The directory of terminals and controllers for projects.
     IJBDirectory public directory;
 
-    constructor(address _governance, address[] memory _dataSources) {
-        governance = _governance;
-        dataSources = _dataSources;
+    constructor() 
+    {
     }
 
     modifier onlyGovernance()

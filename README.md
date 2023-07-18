@@ -13,10 +13,10 @@
 2. Navigate to the cloned directory: `cd data-aggregator-contracts`
 3. Install Forge with `curl -L https://foundry.paradigm.xyz | bash`. If you already have Foundry installed, run `foundryup` to update to the latest version. More detailed instructions can be found in the [Foundry Book](https://book.getfoundry.sh/getting-started/installation).
 4. Run tests (yarn test or forge test)
-5. Deploy the contracts to your preferred Ethereum development network.
+5. Deploy the contracts as a data source in a JBX context on your Ethereum development network.
 6. Interact with the deployed contracts by calling their functions.
 
-## Isolated usage examples
+## Isolated usage examples (non-jbx)
 **Allow List Aggregation**
 ```
 // Example usage of AllowlistDataSourceAggregator contract
